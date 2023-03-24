@@ -1,0 +1,27 @@
+.baner {
+   height: 35vh;
+   background: url("../../../assets/img/img02.png") no-repeat;
+   background-size: cover;
+   /* opacity: 0.75; */
+}
+#mifotoID {
+   width: 180px;
+   height: 180px;
+   margin-left: 2rem;
+   margin-top: -100px;
+   border-radius: 50%;
+   z-index: 1;
+}
+.sombra2 {
+   box-shadow: 0 3px 7px rgba(47, 79, 78, 0.945), 0 2px 10px rgba(119, 136, 153, 0.74);
+}
+.art-enc{
+   /* max-width: 1200px; */
+   /* margin: 0.8rem 1rem 2rem 1rem; */
+   padding-top: 1.5rem;
+   box-shadow: 0 3px 7px rgba(47, 79, 78, 0.945), 0 2px 10px rgba(119, 136, 153, 0.74);
+   border: 1px solid rgb(232, 255, 156);
+   border-top-left-radius: 1rem;
+   border-bottom-right-radius: 3rem;
+   background-color:whitesmoke;
+}

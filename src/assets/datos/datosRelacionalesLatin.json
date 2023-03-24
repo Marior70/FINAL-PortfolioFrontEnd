@@ -1,0 +1,163 @@
+{
+   "personas": [
+      {
+      "id": 1,
+      "nombres": "Marius",
+      "apellidos": "Baracus",
+      "foto": "../../../assets/img/mifoto.png",      
+      "email": "micuenta@midominio.com",
+      "movil": "11 1234-5678",
+      "acercade": "Lorem ipsum. Dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem lacerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet..",
+      "titulo": "Web Developer Full Stack Jr",
+      "localidad": "Mar del Plata",
+      "borrado": false,
+   }
+   ],
+   "experiencias": [
+      {
+         "id": 2,
+         "entidad": "operis sui iuris",
+         "rol": "Client: De insanis stupra",
+         "logo": "./assets/img/logo_net-m.png",
+         "fechaIni": "Abr 2018",
+         "fechaFin": "Jun 2019",
+         "descripcion": "Progressio applicationum pro praecipue telephoniis gestabilibus"
+      },
+      {
+         "id": 1,
+         "entidad": "Persona Origin",
+         "rol": "Client: De insanis stupra",
+         "logo": "./assets/img/logo_atos.png",
+         "fechaIni": "Jul 2011",
+         "fechaFin": "Mar 2018",
+         "descripcion": "Finis user auxilium technicos"
+      }
+   ],
+   "educacion": [
+      {
+         "id": 3,
+         "nivel": "Academica",
+         "estado": "Incompletum",
+         "fechaIni": "2020",
+         "fechaFin": "2016",
+         "titulo": "Phasellus",
+         "entidad": "Tempor",
+         "logo": "./assets/img/logo_utn.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 2,
+         "nivel": "Tertiarius",
+         "estado": "Complete",
+         "fechaIni": "2015",
+         "fechaFin": "2010",
+         "titulo": "ratio technica",
+         "entidad": "Don OttoK",
+         "logo": "./assets/img/logo_krause.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 1,
+         "nivel": "Primarium",
+         "estado": "Complete",
+         "fechaIni": "2009",
+         "fechaFin": "2003",
+         "titulo": "",
+         "entidad": "Dr Lopez et Plani",
+         "logo": "./assets/img/logo_primaria.png",
+         "localidad": "domus meus"
+      }
+   ],
+   "cursos": [
+      {
+         "id": 6,
+         "tema": "Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.",
+         "fechaIni": "Jun 2022",
+         "fechaFin": "Ene 2023",
+         "entidad": "Argentina programma",
+         "logo": "./assets/img/logo_yoprogramo.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 5,
+         "tema": "Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.",
+         "fechaIni": "Jun 2022",
+         "fechaFin": "Ene 2023",
+         "entidad": "Argentina programma",
+         "logo": "./assets/img/logo_seprogramar.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 4,
+         "tema": "Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.",
+         "fechaIni": "Dic 2019",
+         "fechaFin": "",
+         "entidad": "3Com Argentina",
+         "logo": "./assets/img/logo_3com.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 3,
+         "tema": "Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.",
+         "fechaIni": "Mar 2018",
+         "fechaFin": "Abr 2018",
+         "entidad": "AMP S.A.",
+         "logo": "./assets/img/logo_amp.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 2,
+         "tema": "fibris optical communications",
+         "fechaIni": "Nov 2017",
+         "fechaFin": "",
+         "entidad": "Deland S.R.L.",
+         "logo": "./assets/img/logo_deland.png",
+         "localidad": "domus meus"
+      },
+      {
+         "id": 1,
+         "tema": "QoS ad corporatum retiacula",
+         "fechaIni": "Jul 2017",
+         "fechaFin": "",
+         "entidad": "Cisco Systems",
+         "logo": "./assets/img/logo_cisco.png",
+         "localidad": "domus meus"
+      }
+   ],
+   "aptitudes": [
+      {
+         "id": 4,
+         "aptitud": "Frontend: HTML/CSS/JS Bootstrap Angular",
+         "valor": "60"
+      },
+      {
+         "id": 3,
+         "aptitud": "Backend: Spring-Boot Java MariaDB JWT",
+         "valor": "60"
+      },
+      {
+         "id": 2,
+         "aptitud": "Trabajo en equipo",
+         "valor": "95"
+      },
+      {
+         "id": 1,
+         "aptitud": "Responsabilidad",
+         "valor": "100"
+      }
+   ],
+   "proyectos": [
+      {
+         "id": 2,
+         "nombre": "Rosco (En desarrollo)",
+         "descripcion": "Implementacion del juego del Rosco (HTML, CSS, Bootstrap, Angular, MariaDB, JAVA, JWT",
+         "link": "milink.myddns.me/rosco"
+      },
+      {
+         "id": 1,
+         "nombre": "Gestion del Hogar (En desarrollo)",
+         "descripcion": "app para gestión del hogar. Módulo de compras y manejo de Stock (HTML, CSS, Bootstrap, Angular, MariaDB, JAVA, JWT",
+         "link": "milink2.myddns.me/mihogar"
+      }
+   ]
+}

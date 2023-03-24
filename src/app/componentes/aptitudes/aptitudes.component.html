@@ -1,0 +1,51 @@
+<section id="aptitudes" class="container-lg pad-top mb-5">
+   <header class="d-flex-xl ms-3">
+      <div class="flex-shrink-0">
+         <div class="d-flex align-middle">
+            <div class="flex-shrink-1 me-4">
+               <h2 class="text-white txt"><i>Aptitudes</i></h2>
+            </div>
+            <div *ngIf="esAdmin" class="flex-shrink-2">
+               <button class="me-right btn-nuevo" type="button" title="Agregar Aptitud" routerLink="/aptitud/nueva">
+                  <b>+</b>
+               </button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="container art-apt">
+      <ul class="container py-4">
+         <li *ngFor="let aptitud of aptitudList">
+            <p class="mb-0"><i class="bi bi-briefcase m-3 text-primary"></i>{{aptitud.nombre}}</p>
+            <div class="progress mb-4">
+               <div class="progress-bar bg-success bg-opacity-75" role="progressbar" [style.width.%]="aptitud.valor"
+                  [attr.aria-valuenow]="aptitud.valor" aria-valuemin="0" aria-valuemax="100">{{aptitud.valor}} %</div>
+            </div>
+            <div *ngIf="esAdmin">
+               <button class="btn-edt mx-2" type="button" title="Editar Aptitud" routerLink="/aptitud/editar/{{aptitud.id}}">
+                  <i class="bi bi-pen"></i>
+               </button>
+               <button class="btn-borrar mb-4" type="button" title="Borrar Aptitud" (click)="borrar(aptitud.id)">
+                  <b>X</b>
+               </button>
+            </div>
+         </li>
+      </ul>
+   </div>
+
+   <!-- Código del template estático. Se repetía por cada aptitud a mostrar
+
+   <div class="container-sm bg-section">
+      <div class="container py-4">
+         <p class="mb-0"><i class="bi bi-briefcase m-3 text-primary"></i>{{aptitud.nombre}}</p>
+         <div class="progress mb-3">
+            <div class="progress-bar bg-success bg-opacity-75" role="progressbar" style="width: 100%" aria-valuenow="100"
+               aria-valuemin="0" aria-valuemax="100">100%
+            </div>
+         </div>
+      </div>
+   </div>
+-->
+
+</section>

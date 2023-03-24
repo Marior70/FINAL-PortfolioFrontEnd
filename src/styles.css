@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+/*
+* {
+   margin: 0;
+   padding: 0;;
+}
+*/
+body {
+   margin-top: 0;
+   color: midnightblue;
+   background: url("/assets/img/img03.png") no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.oculto {
+   display:none;
+}
+
+.disable {
+   opacity: 0.6;
+   cursor:default;
+}
+
+.pad-top {
+   padding-top: 7rem; /* 80px; */
+}
+
+.seccion{
+   height: 100vh;
+}
+
+/* .txt {
+   text-shadow: 3px 1px 3px black;
+} */
+
+.btn-borrar {
+   padding: 2px 8px;
+   border: 1px solid red;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: red;
+   color: white;
+}
+.btn-borrar:hover {
+   background: rgb(255, 142, 142);
+   color: red;
+}
+.btn-edt {
+   padding: 2px 6px;
+   border: 1px solid blue;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: blue;
+   color: white;
+}
+.btn-edt:hover {
+   background: lightblue;
+   color: blue;
+}
+
+.btn-nuevo {
+   padding: 2px 8px;
+   border: 1px solid green;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: green;
+   color: midnightblue;
+}
+.btn-nuevo:hover {
+   background: lightgreen;
+   color: green;
+}
+
+.anchoform {
+   max-width: 40rem;
+}
+.ancho {
+   max-width: 30rem;
+}
+
+.centrar {
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   padding-top: calc(100vh / 4);
+}
+.txt-sombra {
+   text-shadow: 3px 1px 3px black;
+}
+
+.transp {
+   background-color: rgba(0, 0, 0, 0.45);
+}

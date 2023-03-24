@@ -1,0 +1,7 @@
+footer {
+   background: rgba(32,42,68,0.95); 
+   /* box-shadow: 0 3px 7px rgba(1, 7, 48, 0.945), 0 3px 15px rgba(10, 118, 234, 0.74); */
+}
+.txt {
+   text-shadow: 5px 2px 4px blue;
+}

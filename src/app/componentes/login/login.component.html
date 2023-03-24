@@ -1,0 +1,79 @@
+<section id="login" class="container-fluid">
+   <!-- <div class="modal fade shadow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="loginLabelID" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="loginLabelID">Abrir Portfolio</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="masc-modal m-5 p-2 sombra2"> -->
+
+            <div class="container-lg centrar text-light">
+               <div class="txt-sombra text-white">
+                  <h1 class="mx-lg-auto">Hola!, soy <strong>Mario
+                        Lerman</strong> <!-- <strong>{{miNombre.nombres}} {{miNombre.apellidos}}</strong> --> </h1>
+                  <hr>
+                  <p class="fs-4 mb-5">Te invito a que leas sobre mí.</p>
+                  <!-- <button id="btnLogin" type="button" class="nav-link btn btn-link fs-5 text-light mx-auto"
+                        data-bs-toggle="modal" data-bs-target="#formLogin" (click)="login()">
+                        <strong><i class="bi bi-hand-thumbs-up text-warning"></i> Abrir Portfolio</strong>
+                     </button>  -->
+               </div>            
+               <form [formGroup]="formLogin" class="m-5" (ngSubmit)="onEnviar($event)">
+                  <!-- <div class="m-2">
+                     <img class="img-fluid" src="./assets/img/img02.png" alt="" />
+                  </div> -->
+                  <div class="mx-auto ancho">
+                     <div class="m-3">
+                        <label for="inputUsernameID" class="form-label txt-sombra">Nombre de Usuario</label>
+                        <input type="text" formControlName="username"
+                           [ngClass]="{'is-invalid': Username?.errors && Username?.touched, 'is-valid': !Username?.errors && Username?.touched}"
+                           class="form-control" id="inputEmailID" aria-describedby="textHelp" />
+                        <div *ngIf="Username?.errors && Username?.touched">
+                           <p *ngIf="Username?.hasError('required')" class="text-danger">
+                              Este campo no puede estar vacio
+                           </p>
+                           <p *ngIf="Username?.hasError('username')" class="text-danger">
+                              El Username debe ser de 3 o más caracteres
+                           </p>
+                        </div>
+                     </div>
+                     <!-- <div class="m-3">
+                        <label for="inputEmailID" class="form-label">Email</label>
+                        <input type="email" formControlName="email"
+                           [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+                           class="form-control" id="inputEmailID" aria-describedby="emailHelp" />
+                        <div *ngIf="Email?.errors && Email?.touched">
+                           <p *ngIf="Email?.hasError('required')" class="text-danger">
+                              Este campo no puede estar vacio
+                           </p>
+                           <p *ngIf="Email?.hasError('email')" class="text-danger">
+                              Formato de email no válido
+                           </p>
+                        </div>
+                     </div> -->
+                     <div class="m-3">
+                        <label for="inputClaveID" class="form-label txt-sombra">Contraseña</label>
+                        <input type="password" formControlName="password"
+                           [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+                           class="form-control" id="inputClaveID" />
+                        <div *ngIf="Password?.errors && Password?.touched">
+                           <p *ngIf="Password?.hasError('required')" class="text-danger">
+                              Este campo no puede estar vacio
+                           </p>
+                           <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+                              La contraseña debe ser de 8 o más caracteres
+                           </p>
+                        </div>
+                     </div>
+                     <button name="btnEnviar" type="submit" class="btn btn-primary m-3">Enviar</button>
+                  </div>
+               </form>
+               
+            </div>
+            <!-- </div>
+         </div>
+      </div>
+   </div> -->
+</section>

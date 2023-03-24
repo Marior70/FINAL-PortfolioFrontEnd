@@ -1,0 +1,80 @@
+<section id="acercade" class="container-lg pad-top mb-5">
+   <div class="baner b-r pt-5"></div>
+   <div class="">
+      <img id="mifotoID" class="sombra2" [src]="perActual.foto" width="194px" height="194px"
+         alt="Foto de perfil de {{perActual.fullName}}" [title]="perActual.fullName" />
+   </div>
+   <div class="d-lg-flex mx-auto">
+      <div class="flex-shrink-0">
+         <div class="d-flex align-middle">
+            <div class="flex-shrink-1 me-4 text-white txt">
+               <h2 id="nombreID" class="mx-3"><strong>{{perActual.fullName}}</strong></h2>
+            </div>
+            <!-- <div *ngIf="esAdmin" class="flex-shrink-2">
+               <button class="me-right btn-nuevo" type="button" title="Agregar Persona" routerLink="/misdatos/nueva">
+                  <b>+</b>
+               </button>
+            </div> -->
+            <div *ngIf="esAdmin" class="flex-shrink-2">
+               <button class="btn-edt mx-2" type="button" title="Editar Datos Personales" routerLink="/misdatos/editar/{{perActual.id}}">
+                  <i class="bi bi-pen"></i>
+               </button>
+               <!-- 
+                  <button class="btn-borrar mb-4" type="button">
+                     <b>X</b>
+                  </button>
+               -->
+            </div>
+         </div>
+         <div class="flex-grow-1 fs-5 text-white txt">
+            <p id="titulo1ID">
+               <i class="bi bi-briefcase mx-3 text-primary"></i>
+               <strong>{{perActual.titulo}}</strong>
+            </p>
+            <p id="residenciaID"><i class="bi bi-house-door mx-3 text-black"></i>{{perActual.residencia}}</p>
+            <p id="emailID"><i class="bi bi-envelope mx-3 text-success"></i>{{perActual.email}}</p>
+            <p id="movilID"><i class="bi bi-phone mx-3 text-danger"></i>{{perActual.movil}}</p>
+         </div>
+      </div>
+      
+   </div>
+   <div class="art-enc b-r p-3">
+      <header>
+         <h3 class="m-3"><i>Acerca de</i></h3>
+      </header>
+      <p id="txtAcercadeID" class="m-3">{{perActual.acercade}}</p>
+   </div>
+   <!-- <div class="baner b-r pt-5"></div>
+   <div class="">
+      <img id="mifotoID" class="sombra2" [src]="perActual.foto" width="194px" height="194px"
+         alt="Foto de perfil de {{perActual.fullName}}" title="{{perActual.fullName}}" />
+   </div>
+   <div class="mx-auto">
+      <div class="text-white txt">
+         <h2 id="nombreID" class="mx-lg-3"><strong>{{perActual.fullName}}</strong></h2>
+      </div>
+      <div class="fs-5 text-white txt">
+         <p id="titulo1ID">
+            <i class="bi bi-briefcase mx-3 text-primary"></i>
+            <strong>{{perActual.titulo}}</strong>
+         </p>
+         <p id="residenciaID"><i class="bi bi-house-door mx-3 text-black"></i>{{perActual.residencia}}</p>
+         <p id="emailID"><i class="bi bi-envelope mx-3 text-success"></i>{{perActual.email}}</p>
+         <p id="movilID"><i class="bi bi-phone mx-3 text-danger"></i>{{perActual.movil}}</p>
+      </div>
+   </div>
+   <div class="art-enc b-r p-3">
+      <header>
+         <h3 class="m-3"><i>Acerca de</i></h3>
+      </header>
+      <p id="txtAcercadeID" class="m-3">{{perActual.acercade}}</p>
+   </div>
+   <div *ngIf="esAdmin">
+      <button class="btn-edt mx-2" type="button">
+         <i class="bi bi-pen"></i>
+      </button>
+      <button class="btn-borrar mb-4" type="button">
+         <b>X</b>
+      </button>
+   </div>-->
+</section>

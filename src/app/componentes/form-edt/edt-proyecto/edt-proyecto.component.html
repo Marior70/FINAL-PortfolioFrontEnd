@@ -1,0 +1,81 @@
+<div class="container-fluid p-2 sombra">
+   <div class="container-md anchoform centrar text-light transp f-pro">
+      <h2 class="mx-lg-auto text-white">Editar Proyecto</h2>
+      <form [formGroup]="formEdtProyecto" class="m-5" (ngSubmit)="onEnviarEdtProyecto($event)">
+         <div class="mx-auto ancho">
+            <div class="m-3 oculto">
+               <label for="inputIdId" class="form-label">Id</label>
+               <input type="number" formControlName="id" class="form-control" id="inputIdId" />
+            </div>
+            <div class="m-3">
+               <label for="inputNombreId" class="form-label">Nombre del Proyecto</label>
+               <input type="text" formControlName="nombre"
+                  [ngClass]="{'is-invalid': Nombre?.errors && Nombre?.touched, 'is-valid': !Nombre?.errors && Nombre?.touched}"
+                  class="form-control" id="inputNombreId" aria-describedby="NombreHelp" />
+               <div *ngIf="Nombre?.errors && Nombre?.touched">
+                  <p *ngIf="Nombre?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Nombre?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 50 caracteres.
+                  </p>
+                  <p *ngIf="Nombre?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputLogoId" class="form-label">Logo</label>
+               <input type="text" formControlName="logo"
+                  [ngClass]="{'is-invalid': Logo?.errors && Logo?.touched, 'is-valid': !Logo?.errors && Logo?.touched}"
+                  class="form-control" id="inputLogoId" aria-describedby="LogoHelp"/>
+               <div *ngIf="Logo?.errors && Logo?.touched">
+                  <p *ngIf="Logo?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 35 caracteres.
+                  </p>
+                  <p *ngIf="Logo?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputDescripcionId" class="form-label">Descripción</label>
+               <input type="text" formControlName="descripcion"
+                  [ngClass]="{'is-invalid': Descripcion?.errors && Descripcion?.touched, 'is-valid': !Descripcion?.errors && Descripcion?.touched}"
+                  class="form-control" id="inputDescripcionId" aria-describedby="DescripcionHelp" />
+               <div *ngIf="Descripcion?.errors && Descripcion?.touched">
+                  <p *ngIf="Descripcion?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Descripcion?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 255 caracteres.
+                  </p>
+                  <p *ngIf="Descripcion?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputLinkId" class="form-label">Link</label>
+               <input type="url" formControlName="link"
+                  [ngClass]="{'is-invalid': Link?.errors && Link?.touched, 'is-valid': !Link?.errors && Link?.touched}"
+                  class="form-control" id="inputLinkId" aria-describedby="LinkHelp" />
+               <div *ngIf="Link?.errors && Link?.touched">
+                  <p *ngIf="Link?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Link?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 255 caracteres.
+                  </p>
+                  <p *ngIf="Link?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+
+            <button name="btnGuardarProyecto" type="submit" class="btn btn-primary m-3"
+               [disabled]="formEdtProyecto.invalid">Guardar</button>
+         </div>
+      </form>
+   </div>
+</div>

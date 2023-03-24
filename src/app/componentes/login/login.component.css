@@ -1,0 +1,32 @@
+/* .portada {
+    height: 100vh;
+   background: url("../../../assets/img/img03.png") no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+} */
+.centrar {
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   padding-top: calc(100vh / 4);
+}
+
+.txt-sombra {
+   text-shadow: 3px 1px 3px black;
+}
+
+.txt-luz {
+   text-shadow: 3px 1px 3px white;
+}
+
+hr {
+   border: 1px solid rgba(var(--bs-primary-rgb));
+   margin: 0 7rem 2rem 7rem;
+}
+h1 {
+   margin-top: 5rem;   
+}
+
+.ancho {
+   max-width: 20rem;
+}

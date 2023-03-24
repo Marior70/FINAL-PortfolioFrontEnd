@@ -1,0 +1,84 @@
+<div class="container-fluid p-2 sombra">
+   <div class="container-md anchoform centrar text-light transp f-cur">
+      <h2 class="mx-lg-auto text-white">Agregar nuevo Curso</h2>
+      <form [formGroup]="formNewCurso" class="m-5" (ngSubmit)="onEnviarNewCurso($event)">
+         <div class="mx-auto ancho">
+            <div class="m-3">
+               <label for="inputEntidadId" class="form-label">Entidad</label>
+               <input type="text" formControlName="entidad"
+                  [ngClass]="{'is-invalid': Entidad?.errors && Entidad?.touched, ' is-valid': !Entidad?.errors && Entidad?.touched}"
+                  class="form-control" id="inputEntidadId" aria-describedby="entidadHelp" />
+               <div *ngIf="Entidad?.errors && Entidad?.touched">
+                  <p *ngIf="Entidad?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Entidad?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 50 caracteres.
+                  </p>
+                  <p *ngIf="Entidad?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputLogoID" class="form-label">Logo</label>
+               <input type="text" formControlName="logo"
+                  [ngClass]="{'is-invalid': Logo?.errors && Logo?.touched, 'is-valid': !Logo?.errors && Logo?.touched}"
+                  class="form-control" id="inputLogoID" value="./assets/img/"/>
+               <div *ngIf="Logo?.errors && Logo?.touched">
+                  <p *ngIf="Logo?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 35 caracteres.
+                  </p>
+                  <p *ngIf="Logo?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputTemaID" class="form-label">Tema</label>
+               <input type="text" formControlName="tema"
+                  [ngClass]="{'is-invalid': Tema?.errors && Tema?.touched, 'is-valid': !Tema?.errors && Tema?.touched}"
+                  class="form-control" id="inputTemaID" />
+               <div *ngIf="Tema?.errors && Tema?.touched">
+                  <p *ngIf="Tema?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Tema?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener máximo 100 caracteres.
+                  </p>
+                  <p *ngIf="Tema?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputFechaIniID" class="form-label">Fecha de inicio</label>
+               <input type="text" formControlName="fechaIni"
+                  [ngClass]="{'is-invalid': FechaIni?.errors && FechaIni?.touched, 'is-valid': !FechaIni?.errors && FechaIni?.touched}"
+                  class="form-control" id="inputFechaIniID" />
+               <div *ngIf="FechaIni?.errors && FechaIni?.touched">
+                  <p *ngIf="FechaIni?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="FechaIni?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputFechaFinID" class="form-label">Fecha de finalización</label>
+               <input type="text" formControlName="fechaFin"
+                  [ngClass]="{'is-invalid': FechaFin?.errors && FechaFin?.touched, 'is-valid': !FechaFin?.errors && FechaFin?.touched}"
+                  class="form-control" id="inputFechaFinID" />
+               <div *ngIf="FechaFin?.errors && FechaFin?.touched">
+                  <p *ngIf="FechaFin?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+
+            <button name="btnGuardarCurso" type="submit" class="btn btn-primary m-3" [disabled]="formNewCurso.invalid">Guardar</button>
+         </div>
+      </form>
+   </div>
+</div>

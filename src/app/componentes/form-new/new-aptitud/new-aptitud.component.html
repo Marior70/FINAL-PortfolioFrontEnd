@@ -1,0 +1,45 @@
+<div class="container-fluid p-2">
+   <div class="container-md anchoform centrar text-light transp art-apt">
+      <h2 class="mx-lg-auto text-white">Agregar nueva Aptitud</h2>
+      <form [formGroup]="formNewAptitud" class="m-5" (ngSubmit)="onEnviarNewAptitud($event)">
+         <div class="mx-auto ancho">
+            <div class="m-3">
+               <label for="inputAptitudId" class="form-label">Aptitud</label>
+               <input type="text" formControlName="nombre"
+                  [ngClass]="{'is-invalid': Nombre?.errors && Nombre?.touched, 'is-valid': !Nombre?.errors && Nombre?.touched}"
+                  class="form-control" id="inputAptitudId" aria-describedby="AptitudHelp"/>
+               <div *ngIf="Nombre?.errors && Nombre?.touched">
+                  <p *ngIf="Nombre?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Nombre?.errors?.['maxlength']" class="text-danger">
+                     El campo debe contener como máximo 65 caracteres.
+                  </p>
+                  <p *ngIf="Nombre?.hasError('pattern')" class="text-danger">
+                     Formato de campo no válido
+                  </p>
+               </div>
+            </div>
+            <div class="m-3">
+               <label for="inputValorID" class="form-label">Valor</label>
+               <input type="text" formControlName="valor"
+                  [ngClass]="{'is-invalid': Valor?.errors && Valor?.touched, 'is-valid': !Valor?.errors && Valor?.touched}"
+                  class="form-control" id="inputValorID" aria-describedby="ValorHelp"/>
+               <div *ngIf="Valor?.errors && Valor?.touched">
+                  <p *ngIf="Valor?.hasError('required')" class="text-danger">
+                     Este campo no puede estar vacio
+                  </p>
+                  <p *ngIf="Valor?.hasError('min')" class="text-danger">
+                     El campo debe contener un valor del 1 al 100
+                  </p>
+                  <p *ngIf="Valor?.hasError('max')" class="text-danger">
+                     El campo debe contener un valor del 1 al 100
+                  </p>
+               </div>
+            </div>
+
+            <button name="btnGuardarAptitud" type="submit" class="btn btn-primary m-3" [disabled]="formNewAptitud.invalid">Guardar</button>
+         </div>
+      </form>
+   </div>
+</div>

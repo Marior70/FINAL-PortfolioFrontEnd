@@ -1,0 +1,65 @@
+<header id="navbar" class="container-fluid fixed-top px-2 text-light">
+   <nav class="navbar navbar-expand-xl navbar-dark">
+      <a class="navbar-brand"
+         href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+         <img src="../../../assets/img/logo_yoprogramo.png" width="100px" height=""
+            alt="Logo de Argentina Programa - #YoProgramo" title="Argentina Programa - #YoProgramo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu01"
+         aria-controls="menu01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu01" class="collapse navbar-collapse fs-5 text-center">
+         <ul class="navbar-nav mx-auto invisible">
+            <li class="nav-item mx-2">
+               <a class="nav-link" routerLink="/portfolio/acercade" routerLinkActive="active"
+                  ariaCurrentWhenActive="page">Acerca de</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link" routerLink="/portfolio/experiencias" routerLinkActive="active"
+                  ariaCurrentWhenActive="page">Experiencia</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link" routerLink="/portfolio/educacion" routerLinkActive="active"
+                  ariaCurrentWhenActive="page">Educación</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link" routerLink="/portfolio/aptitudes" routerLinkActive="active"
+                  ariaCurrentWhenActive="page">Aptitudes</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link" routerLink="/portfolio/proyectos" routerLinkActive="active"
+                  ariaCurrentWhenActive="page">Proyectos</a>
+            </li>
+         </ul>
+         <ul class="navbar-nav me-right fs-2">
+            <li class="nav-item">
+               <a class="nav-link bi bi-envelope text-info" href="mailto:net.m.mario@gmail.com" title="Email"></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link bi bi-whatsapp text-success"
+                  href="https://api.whatsapp.com/send?phone=54945777353&text=Hola,%20en%20breve%20te%20estaré%20respondiendo.%20%20Gracias."
+                  title="Whatsapp"></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link bi bi-github iconRed iconRedG icon tresSeg" href="https://github.com/Marior70"
+                  target="_blank" title="GitHub"></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link bi bi-facebook text-primary disable" href="fb://https://www.facebook.com/mrl"
+                  title="Facebook"></a>
+            </li>
+            <li class="nav-item me-xl-4">
+               <a class="nav-link bi bi-instagram disable" style="color:peru" href="instagram://user?username=mrl"
+                  title="Instagram"></a>
+            </li>
+            <li *ngIf="portfolio" class="nav-item ">
+               <button id="btnLogin" type="button" class="nav-link mx-auto text-warning txt-sombra" data-bs-toggle="modal"
+                  data-bs-target="#formLogin" (click)="cerrarPortfolio()">
+                  Cerrar Portfolio
+               </button>
+            </li>
+         </ul>
+      </div>
+   </nav>
+</header>

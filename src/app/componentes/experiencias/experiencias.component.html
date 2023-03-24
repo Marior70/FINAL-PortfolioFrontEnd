@@ -1,0 +1,52 @@
+<section id="experiencia" class="container-lg pad-top">
+   <header class="d-flex-xl ms-3">
+      <div class="flex-shrink-0">
+         <div class="d-flex align-middle">
+            <div class="flex-shrink-1 me-4">
+               <h2 class="text-white txt"><i>Experiencias</i></h2>
+            </div>
+            
+            <div *ngIf="esAdmin" class="flex-shrink-2">
+               <button class="me-right btn-nuevo" type="button" title="Agregar Experiencia" routerLink="/experiencia/nueva">
+                  <b>+</b>
+               </button>
+            </div>
+
+         </div>
+      </div>
+   </header>
+
+   <ul>
+      <li *ngFor="let experiencia of experienciaList">
+         <article class="d-flex-xl align-items-center art-exp">
+            <div class="flex-shrink-0">
+               <div class="d-flex align-items-center">
+                  <div class="flex-shrink-1 mx-3">
+                     <img [src]="experiencia.logo" width="60px" height="60px" title="Net-M"
+                        alt="Logo de {{experiencia.entidad}}" [title]="experiencia.entidad" />
+                  </div>
+                  <div class="flex-grow-2">
+                     <div class="align-middle">
+                        <h3 class="fs-4 fw-bold">{{experiencia.entidad}}</h3>
+                        <h4 class="fs-6">{{experiencia.rol}}</h4>
+                     </div>
+                     <div class="fs-6">{{experiencia.fechaIni}} - {{experiencia.fechaFin}}</div>
+                  </div>
+               </div>
+            </div>
+            <div class="flex-grow-1 p-3 fs-6 align-middle">{{experiencia.descripcion}}</div>
+            
+            <div *ngIf="esAdmin">
+               <button class="btn-edt mx-2" type="button" title="Editar Experiencia" routerLink="/experiencia/editar/{{experiencia.id}}">
+                  <i class="bi bi-pen"></i>
+               </button>
+               <button class="btn-borrar mb-4" type="button" title="Borrar Experiencia" (click)="borrar(experiencia.id)">
+                  <b>X</b>
+               </button>
+            </div>
+
+         </article>
+      </li>
+   </ul>
+
+</section>

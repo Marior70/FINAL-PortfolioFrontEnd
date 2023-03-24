@@ -1,0 +1,259 @@
+{
+   "persona": {
+      "id": 1,
+      "nombres": "Mario",
+      "apellidos": "Baracus",
+      "foto": "/assets/img/mifoto.jpeg",
+      "titulo": "Web Developer Full Stack Jr & Electrotécnico",
+      "localidad": "Mar del Plata",
+      "provincia": "Buenos Aires",
+      "email": "micuenta@midominio.com",
+      "movil": "11 1234-5678",
+      "acercade": "Electrotécnico. 25 años en el setor TI, área de Infraestructura de Redes. Diseño e instalación completa de soluciones de redes, electricidad y servicios complementarios. Actualmente, iniciándome en el Desarrollo Web."
+   },
+   "experiencias": [
+      {
+         "id": 7, 
+         "empresa": "Net-M (Trabajo Autónomo)",
+         "rol": "Cliente: Cofco International, Pta. Valentín Alsina",
+         "logo": "./assets/img/logo_net-m.png",
+         "fechaIni": "Abr 2018",
+         "fechaFin": "Jun 2019",
+         "descripcion": "Mantenimiento preventivo-correctivo de Sistema NVR (2 Domos y 30 Cámaras IP + Red de Planta, VLANs Capa 3, Cableado y electrónica de red, instalación eléctrica y UPS de cada Rack, control y depuración de Backup según requisitos RES 2977 de AFIP)"
+      },
+      {      
+         "id": 6, 
+         "empresa": "Atos Origin Argentina",
+         "rol": "Asignado a Cta. NIDERA S.A. (Cofco International)",
+         "logo": "./assets/img/logo_atos.png",
+         "fechaIni": "Jul 2011",
+         "fechaFin": "Abr 2018",
+         "descripcion": "Diseño, proyecto, mejoras, modificaciones, resolución de problemas y mantenimiento de instalaciones de Infraestructura de Red en Casa Central y Plantas industriales, Oficinas y Acopios en el país"  
+      },
+      {      
+         "id": 5, 
+         "empresa": "Net-M (Trabajo Autónomo)",
+         "rol": "Clientes: Nidera S.A. (Casa Central, Plantas Industriales , Oficinas y Acopios del interior del país), Quebrachito Granos S.A., Illinois S.A. y Cosechas de Uruguay S.A.- Carmelo, Uruguay",
+         "logo": "./assets/img/logo_net-m.png",
+         "fechaIni": "Jul 2002",
+         "fechaFin": "Jun 2011",
+         "descripcion": "Networking e instalaciones de Infraestructura de Red, Administración de sistemas en Pymes y venta de equipamiento de red, computadoras, licencias de software e insumos informáticos"  
+      },
+      {      
+         "id": 4, 
+         "empresa": "Técnicas Avanzadas en Informática S.A. / Taisa S.A.",
+         "rol": "Responsable Departamento técnico",
+         "logo": "./assets/img/logo_tai.png",
+         "fechaIni": "Mar 1995",
+         "fechaFin": "Jun 2002",
+         "descripcion": "Proyecto, coordinación e implementación de instalaciones de Infraestructura de Red en redes LAN, Supervisión y Certificación de Cableado Estructurado. Tendidos y conexión de Backbones y puestos de trab. en fibra óptica, Análisis y resolución de fallas en la Red de Datos y Confección de Documentación de Obra"  
+      },
+      {      
+         "id": 3, 
+         "empresa": "Olce Consultores de Empresas S.R.L.",
+         "rol": "Asignado a Edenor S.A.",
+         "logo": "./assets/img/logo_olce.png",
+         "fechaIni": "Oct 1993",
+         "fechaFin": "Feb 1995",
+         "descripcion": "Técnico-Administrativo en Gcia. I.R.E., SubGcia. Inspecciones y Adecuaciones T1-pequeños consumidores. Clasificación, análisis, administración de BD de control y generación de novedades al Sistema con impacto en facturación"  
+      },
+      {      
+         "id": 2, 
+         "empresa": "Cornejo Informática S.A.",
+         "rol": "",
+         "logo": "./assets/img/logo_cornejo",
+         "fechaIni": "Jun 1992",
+         "fechaFin": "Jul 1992",
+         "descripcion": "Técnico armado y puesta en marcha de PCs"  
+      },
+      {      
+         "id": 1, 
+         "empresa": "Distribuidora Alsina",
+         "rol": "",
+         "logo": "./assets/img/logo_distals",
+         "fechaIni": "Dic 1990",
+         "fechaFin": "Mar 1992",
+         "descripcion": "Instalación de ventiladores de techo y Service de radio-relojes y radio-grabadores"  
+      }
+   ],
+   "educacion": [
+      {
+         "id": 4,
+         "entidad": "UTN - Regional Bs As",
+         "logo": "./assets/img/logo_utn.png",
+         "localidad": "C.A.B.A.",
+         "nivel": "Universitario",
+         "titulo": "Ing. Electrónica e Ing. en Sistemas",
+         "estado": "INCOMPLETO",
+         "fechaIni": "1990",
+         "fechaFin": "1999"
+      },
+      {
+         "id": 3,
+         "entidad": "E.N.E.T. Nº 1 Ing. Otto Krause",
+         "logo": "./assets/img/logo_krause.png",
+         "localidad": "C.A.B.A.",
+         "nivel": "Terciario",
+         "titulo": "Electrotécnico",
+         "estado": "COMPLETO",
+         "fechaIni": "1987",
+         "fechaFin": "1989"
+      },
+      {
+         "id": 2,
+         "entidad": "Escuela Industrial Superior - Anexa a Fac. Ing. Química - UNL",
+         "logo": "./assets/img/logo_eis.png",
+         "localidad": "Santa Fe, Pcia. de Santa Fe",
+         "nivel": "Terciario",
+         "titulo": "Mecánica Eléctrica",
+         "estado": "INCOMPLETO, (Completados: Ciclo básico y 1er. año Mecánica Eléctrica)",
+         "fechaIni": "1986",
+         "fechaFin": "1986"
+      },
+      {
+         "id": 1,
+         "entidad": "Esc.Nº 5 Vicente López y Planes",
+         "logo": "./assets/img/logo_primaria.png",
+         "localidad": "Santa Fe, Pcia. de Santa Fe",
+         "nivel": "Primario",
+         "titulo": "",
+         "estado": "COMPLETO",
+         "fechaIni": "1976",
+         "fechaFin": "1982"
+      }
+   ],
+   "cursos": [
+      {
+         "id": 12,
+         "entidad": "INTI - Plan Argentina Programa",
+         "logo": "./assets/img/logo_yoprogramo.png",
+         "tema": "#YoProgramo",
+         "fechaIni": "Jun 2022",
+         "fechaFin": "Ene 2023"
+      },
+      {
+         "id": 11,
+         "entidad": "INTI - Plan Argentina Programa",
+         "logo": "./assets/img/logo_yoprogramo.png",
+         "tema": "#SeProgramar",
+         "fechaIni": "Mar 2022",
+         "fechaFin": "Jun 2022"
+      },
+      {
+         "id": 10,
+         "entidad": "Enterasys Networks",
+         "logo": "./assets/img/logo_enterasys.png",
+         "tema": "Vínculos Wireless",
+         "fechaIni": "Nov 2002",
+         "fechaFin": ""
+      },
+      {
+         "id": 9,
+         "entidad": "3Com Argentina",
+         "logo": "./assets/img/logo_3com.png",
+         "tema": "FIREWALL",
+         "fechaIni": "Sep 2001",
+         "fechaFin": ""
+      },
+      {
+         "id": 8,
+         "entidad": "Cisco Systems",
+         "logo": "./assets/img/logo_cisco.png",
+         "tema": "QoS para Redes Corporativas",
+         "fechaIni": "Jul 1999",
+         "fechaFin": ""
+      },
+      {
+         "id": 7,
+         "entidad": "3Com Argentina",
+         "logo": "./assets/img/logo_3com.png",
+         "tema": "SWITCHING: SuperStack II Ethernet/Fast Ethernet Solutions",
+         "fechaIni": "Dic 1998",
+         "fechaFin": ""
+      },
+      {
+         "id": 6,
+         "entidad": "3Com Argentina",
+         "logo": "./assets/img/logo_3com.png",
+         "tema": "Implementing CoreBuilder 3500 in L3 Switched Network",
+         "fechaIni": "Jun 1998",
+         "fechaFin": ""
+      },
+      {
+         "id": 5,
+         "entidad": "AMP Argentina",
+         "logo": "./assets/img/logo_amp.png",
+         "tema": "AMP ACT Certifying & Troubleshooting LAN Cabling Systems",
+         "fechaIni": "Feb 1998",
+         "fechaFin": ""
+      },
+      {
+         "id": 4,
+         "entidad": "Instituto Capacitación Laboral UECARA",
+         "logo": "./assets/img/logo_uecara.png",
+         "tema": "Autocad R.13",
+         "fechaIni": "Nov 1997",
+         "fechaFin": "Dic 1997"
+      },
+      {
+         "id": 3,
+         "entidad": "EXO Training Center",
+         "logo": "./assets/img/logo_exo.png",
+         "tema": "NETWARE 4.1 Administration",
+         "fechaIni": "Feb 1997",
+         "fechaFin": ""
+      },
+      {
+         "id": 2,
+         "entidad": "Deland S.R.L.",
+         "logo": "./assets/img/logo_deland.png",
+         "tema": "FIBRAS ÓPTICAS Para Comunicaciones",
+         "fechaIni": "Nov 1996",
+         "fechaFin": ""
+      },
+      {
+         "id": 1,
+         "entidad": "AMP Argentina",
+         "logo": "./assets/img/logo_amp.png",
+         "tema": "AMP ACT Installing & Connectorizing LAN Cabling Systems",
+         "fechaIni": "Ago 1996",
+         "fechaFin": ""
+      }
+   ],
+   "aptitudes": [
+      {
+         "id": 4,
+         "nombre": "Frontend: HTML/CSS/JS Bootstrap Angular",
+         "valor": "60"
+      },
+      {
+         "id": 3,
+         "nombre": "Backend: JAVA JWT MariaDB Spring-Boot",
+         "valor": "60"
+      },
+      {
+         "id": 2,
+         "nombre": "Trabajo en equipo",
+         "valor": "95"
+      },
+      {
+         "id": 1,
+         "nombre": "Responsabilidad",
+         "valor": "100"
+      }
+   ],
+   "proyectos": [
+      {
+          "id": 2,
+          "nombre": "Rosco (En desarrollo)",
+          "descripcion": "Implementacion del juego del Rosco (HTML, CSS, JS, Bootstrap, Angular, MariaDB, JAVA",
+          "link": "milink.myddns.me/rosco"
+      },
+      {
+          "id": 1,
+          "nombre": "Gestion del Hogar (En desarrollo)",
+          "descripcion": "app para gestión del hogar. Módulo de compras y manejo de Stock (HTML, CSS, JS, Bootstrap, Angular, Java,Sprint Boot, MariaDB, JWT, Apache",
+          "link": "milink2.myddns.me/mihogar"
+      }
+   ]
+}

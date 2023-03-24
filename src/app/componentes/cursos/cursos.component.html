@@ -1,0 +1,47 @@
+<section id="cursos" class="container-lg pad-top mb-5">
+   <header class="d-flex-xl ms-3">
+      <div class="flex-shrink-0">
+         <div class="d-flex align-middle">
+            <div class="flex-shrink-1 me-4">
+               <h2 class="text-white txt"><i>Cursos</i></h2>
+            </div>
+            <div *ngIf="esAdmin" class="flex-shrink-2">
+               <button class="me-right btn-nuevo" type="button" title="Agregar Curso" routerLink="/curso/nuevo">
+                  <b>+</b>
+               </button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <ul>
+      <li *ngFor="let curso of cursoList">
+         <article class="d-flex-xl align-items-center art-cur">
+            <div class="flex-shrink-0">
+               <div class="d-flex align-items-center">
+                  <div class="flex-shrink-1 mx-3">
+                     <img [src]="curso.logo" width="60px" height="60px" [title]="curso.entidad"
+                        alt="Logo de {{curso.entidad}}" />
+                  </div>
+                  <div class="flex-grow-2">
+                     <div class="align-middle">
+                        <h3 class="fs-4 fw-bold mt-3">{{curso.entidad}}</h3>
+                        <p class="fs-6">{{curso.fullLocalidad}}</p>
+                        <h4 class="fs-5">{{curso.tema}}</h4>
+                     </div>
+                     <div class="fs-6 mb-3">{{curso.fechaIni}} - {{curso.fechaFin}}</div>
+                  </div>
+               </div>
+            </div>
+            <div *ngIf="esAdmin">
+               <button class="btn-edt mx-2" type="button" title="Editar Curso" routerLink="/curso/editar/{{curso.id}}">
+                  <i class="bi bi-pen"></i>
+               </button>
+               <button class="btn-borrar mb-4" type="button" title="Borrar Curso" (click)="borrar(curso.id)">
+                  <b>X</b>
+               </button>
+            </div>
+         </article>
+      </li>
+   </ul>
+</section>
