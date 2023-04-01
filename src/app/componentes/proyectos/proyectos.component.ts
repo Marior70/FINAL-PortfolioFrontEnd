@@ -28,21 +28,21 @@ export class ProyectosComponent implements OnInit {
       });
    }
 
-   // ngOnInit(): void {
-   //    this.esAdmin = true;
-   //    this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //       this.proyectoList = data.proyectos;
-   //    });
-   // }
+   /* ngOnInit(): void {
+      this.esAdmin = true;
+      this.datosPortfolio.obtenerDatos().subscribe(data => {
+         this.proyectoList = data.proyectos;
+      });
+   }
 
-   // borrar(id?: number) {
-   //    const rutaURL = "proyecto/borrar/" + id;
-   //    if (id != undefined) {
-   //       this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
-   //          this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //             this.proyectoList = data.proyectos;
-   //          });
-   //       });
-   //    }
-   // }
+   borrar(id?: number) {
+      const rutaURL = "proyecto/borrar/" + id;
+      if (id != undefined) {
+         this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
+            this.datosPortfolio.obtenerDatos().subscribe(data => {
+               this.proyectoList = data.proyectos;
+            });
+         });
+      }
+   } */
 }

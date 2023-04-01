@@ -22,15 +22,16 @@ export class PersonaComponent implements OnInit {
       });
    }
 
-   borrar(id: number) {
+   /* borrar(id: number) {
       this.perServ.borrarDatos(id).subscribe(personas => {
          this.perServ.obtenerDatos().subscribe(personas => {
             this.personaList = personas;
             this.perActual = this.personaList[0];
-
          });
       });
-   }
+   } */
+
+   
    /* ngOnInit(): void {
       this.esAdmin = true;
       this.datosPortfolio.obtenerDatos().subscribe(data => {

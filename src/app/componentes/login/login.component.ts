@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
    }
 
    ngOnInit(): void {
-      this.authServ.portfolioAbierto = false;
+      // this.authServ.PortfolioAbierto;
    }
 
    get Username() {
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       
       this.authServ.IniciarSesion(this.formLogin.value).subscribe(data => {
          this.ruta.navigate(['/portfolio']);
-         this.authServ.portfolioAbierto = true;
+         // this.authServ.PortfolioAbierto;
       });
    }
 }

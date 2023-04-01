@@ -28,21 +28,21 @@ export class EducacionComponent implements OnInit {
       });
    }
 
-   // ngOnInit(): void {
-   //    this.esAdmin = true;
-   //    this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //       this.educacionList = data.educacion;
-   //    });
-   // }
+   /* ngOnInit(): void {
+      this.esAdmin = true;
+      this.datosPortfolio.obtenerDatos().subscribe(data => {
+         this.educacionList = data.educacion;
+      });
+   }
 
-   // borrar(id?: number) {
-   //    const rutaURL = "educacion/borrar/" + id;
-   //    if (id != undefined) {
-   //       this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
-   //          this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //             this.educacionList = data.educacion;
-   //          });
-   //       });
-   //    }
-   // }
+   borrar(id?: number) {
+      const rutaURL = "educacion/borrar/" + id;
+      if (id != undefined) {
+         this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
+            this.datosPortfolio.obtenerDatos().subscribe(data => {
+               this.educacionList = data.educacion;
+            });
+         });
+      }
+   } */
 }

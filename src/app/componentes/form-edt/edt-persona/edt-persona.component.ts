@@ -34,11 +34,23 @@ export class EdtPersonaComponent {
 
    ngOnInit(): void {
       this.esAdmin = this.authServ.EsAdmin;
+
       this.perServ.obtenerDatos().subscribe(personas => {
          this.personaList = personas;
-         this.perActual = this.personaList[0];
+         
+         this.perActual.id = this.personaList[0].id;
+         this.perActual.nombres = this.personaList[0].fullname.split("", 2)[0];
+         this.perActual.apellidos = this.personaList[0].fullname.split("", 2)[1];
+         this.perActual.foto = this.personaList[0].foto.split("/", 4)[3];
+         this.perActual.email = this.personaList[0].email;
+         this.perActual.movil = this.personaList[0].movil;
+         this.perActual.acercade = this.personaList[0].acercade;
+         this.perActual.localidad = this.personaList[0].residencia.split(",", 3)[0];
+         this.perActual.provincia = this.personaList[0].residencia.split(",", 3)[1];
+         this.perActual.titulo = this.personaList[0].titulo;
 
-         /* for (let i = 0; i < this.personaList.length; i++) {
+         this.formEdtPersona.patchValue(this.perActual);
+          /* for (let i = 0; i < this.personaList.length; i++) {
             if (this.personaList[i].id == this.activatedRouter.snapshot.params['id']) {
                // En el formulario, el input para 'foto' requiere sólo el nombre de archivo. Éste archivo estará previamente cargado en el servidor
                // El controlador del backend le agrega el path de la carpeta 'img' y lo guarda en la BD. 
@@ -48,12 +60,6 @@ export class EdtPersonaComponent {
                this.formEdtPersona.patchValue(this.personaList[i]);
             }
          } */
-         this.perActual.nombres = this.perActual.fullname.split("", 2)[0];
-         this.perActual.apellidos = this.perActual.fullname.split("", 2)[1];
-         this.perActual.localidad = this.perActual.residencia.split(",", 3)[0];
-         this.perActual.provincia = this.perActual.residencia.split(",", 3)[1];
-         this.perActual.foto = this.perActual.foto.split("/", 4)[3];
-         this.formEdtPersona.patchValue(this.perActual);
       });
    }
 

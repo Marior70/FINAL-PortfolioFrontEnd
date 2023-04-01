@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class AutenticacionService {
    url = "http://localhost:8080/auth/abrirportfolio";
    currentUserSubject: BehaviorSubject<any>;
-   portfolioAbierto: boolean = false;
+   // portfolioAbierto: boolean = true;
 
    constructor(private http: HttpClient) {
       this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(sessionStorage.getItem('currentUser')||'{}'))
@@ -35,20 +35,17 @@ export class AutenticacionService {
       return this.currentUserSubject.value.rol == "ROLE_ADMIN";
    }
 
-   get PortfolioAbierto() {
-      return this.portfolioAbierto;
-   }
-
-   set PortfolioAbierto(valor: boolean) {
-      this.portfolioAbierto= valor;
-   }
+   /* get PortfolioAbierto() {
+      return !this.portfolioAbierto;
+   } */
 
    borrarToken(){
       sessionStorage.removeItem('currentUser');
    }
 }
 
-/* // Versión si recibo la data en un 'EntityBody', almacenando el json con el token, username y authorities en el sessionStorage
+/* // Versión si recibo la data en el header "Authorization" (A CORREGIR / TERMINAR DE DESARROLLAR)
+
 url = "http://localhost:8080/auth/abrirportfolio";
       tokenActualSubject: BehaviorSubject<any>;
       // rolActualSubject: BehaviorSubject<any>

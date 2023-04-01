@@ -29,21 +29,21 @@ export class ExperienciasComponent implements OnInit {
       });
    }
 
-   // ngOnInit(): void {
-   //    this.esAdmin = true;
-   //    this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //       this.experienciaList = data.experiencias;
-   //    });
-   // }
+   /* ngOnInit(): void {
+      this.esAdmin = true;
+      this.datosPortfolio.obtenerDatos().subscribe(data => {
+         this.experienciaList = data.experiencias;
+      });
+   }
 
-   // borrar(id?: number) {
-   //    const rutaURL = "experiencia/borrar/" + id;
-   //    if (id != undefined) {
-   //       this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
-   //          this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //             this.experienciaList = data.experiencias;
-   //          });
-   //       });
-   //    }
-   // }
+   borrar(id?: number) {
+      const rutaURL = "experiencia/borrar/" + id;
+      if (id != undefined) {
+         this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
+            this.datosPortfolio.obtenerDatos().subscribe(data => {
+               this.experienciaList = data.experiencias;
+            });
+         });
+      }
+   } */
 }

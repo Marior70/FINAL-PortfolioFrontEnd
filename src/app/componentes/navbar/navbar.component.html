@@ -34,11 +34,11 @@
          </ul>
          <ul class="navbar-nav me-right fs-2">
             <li class="nav-item">
-               <a class="nav-link bi bi-envelope text-info" href="mailto:net.m.mario@gmail.com" title="Email"></a>
+               <a class="nav-link bi bi-envelope text-info" href="mailto:mimail@midominio.com" title="Email"></a>
             </li>
             <li class="nav-item">
                <a class="nav-link bi bi-whatsapp text-success"
-                  href="https://api.whatsapp.com/send?phone=54945777353&text=Hola,%20en%20breve%20te%20estaré%20respondiendo.%20%20Gracias."
+                  href="https://api.whatsapp.com/send?phone=54xxxxxxxxxxx&text=Hola,%20en%20breve%20te%20estaré%20respondiendo.%20%20Gracias."
                   title="Whatsapp"></a>
             </li>
             <li class="nav-item">
@@ -46,16 +46,15 @@
                   target="_blank" title="GitHub"></a>
             </li>
             <li class="nav-item">
-               <a class="nav-link bi bi-facebook text-primary disable" href="fb://https://www.facebook.com/mrl"
+               <a class="nav-link bi bi-facebook text-primary disable" href="fb://https://www.facebook.com/mifacebook"
                   title="Facebook"></a>
             </li>
             <li class="nav-item me-xl-4">
-               <a class="nav-link bi bi-instagram disable" style="color:peru" href="instagram://user?username=mrl"
+               <a class="nav-link bi bi-instagram disable" style="color:peru" href="instagram://user?username=miinstagram"
                   title="Instagram"></a>
             </li>
-            <li *ngIf="portfolio" class="nav-item ">
-               <button id="btnLogin" type="button" class="nav-link mx-auto text-warning txt-sombra" data-bs-toggle="modal"
-                  data-bs-target="#formLogin" (click)="cerrarPortfolio()">
+            <li *ngIf="portfolioAbierto" class="nav-item ">
+               <button id="btnLogout" type="button" class="nav-link btn btn-primary btn-sm fs-6 mt-sm-2 txt-sombra" data-bs-toggle="modal" (click)="cerrarPortfolio()">
                   Cerrar Portfolio
                </button>
             </li>

@@ -1,8 +1,8 @@
 <div class="container-fluid p-2 sombra">
-   <div class="container-lg mx-lg anchoform centrar text-light transp f-per">
-      <h2 class="mx-lg-auto text-white">Editar datos de Persona</h2>
+   <div class="container-md anchoform centrar text-light transp marcoForm">
+      <h2 class="mx-lg-auto titForm text-white">Editar datos de Persona</h2>
       <form [formGroup]="formEdtPersona" class="m-5" (ngSubmit)="onEnviarEdtPersona($event)">
-         <div class="mx-auto "> <!-- ancho -->
+         <div class="mx-auto ancho"> 
             <div class="m-3 oculto">
                <label for="inputIdId" class="form-label">Id</label>
                <input type="number" formControlName="id" class="form-control" id="inputIdId" />

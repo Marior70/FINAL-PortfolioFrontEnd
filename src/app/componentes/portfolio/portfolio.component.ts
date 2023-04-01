@@ -12,6 +12,6 @@ export class PortfolioComponent implements OnInit {
    }
    
    ngOnInit(): void {
-       this.authServ.portfolioAbierto = true;
+      // this.authServ.portfolioAbierto = true;
    }
 }

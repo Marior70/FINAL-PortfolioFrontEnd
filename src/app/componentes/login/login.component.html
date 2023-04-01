@@ -29,7 +29,7 @@
                         <label for="inputUsernameID" class="form-label txt-sombra">Nombre de Usuario</label>
                         <input type="text" formControlName="username"
                            [ngClass]="{'is-invalid': Username?.errors && Username?.touched, 'is-valid': !Username?.errors && Username?.touched}"
-                           class="form-control" id="inputEmailID" aria-describedby="textHelp" />
+                           class="form-control" id="inputUsernameID" aria-describedby="textHelp" />
                         <div *ngIf="Username?.errors && Username?.touched">
                            <p *ngIf="Username?.hasError('required')" class="text-danger">
                               Este campo no puede estar vacio
@@ -67,7 +67,7 @@
                            </p>
                         </div>
                      </div>
-                     <button name="btnEnviar" type="submit" class="btn btn-primary m-3">Enviar</button>
+                     <button name="btnEnviar" type="submit" class="btn btn-primary m-3">Abrir Portfolio</button>
                   </div>
                </form>
                

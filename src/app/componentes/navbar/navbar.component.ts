@@ -8,18 +8,16 @@ import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
    styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-   portfolio: boolean =  this.authServ.PortfolioAbierto;
-
+   // portfolioAbierto: boolean = false;
    constructor(private authServ: AutenticacionService, private ruta: Router) { }
 
    ngOnInit(): void {
-      // this.authServ.PortfolioAbierto;
+      // this.portfolioAbierto = this.authServ.PortfolioAbierto;
    }
 
-   cerrarPortfolio(){
+   cerrarPortfolio() {
       this.authServ.borrarToken;
-      this.authServ.portfolioAbierto= false;
-      // this.portfolio= this.authServ.PortfolioAbierto;
+      // this.portfolioAbierto = this.authServ.PortfolioAbierto;
       this.ruta.navigate(['/abrirportfolio']);
    }
 }

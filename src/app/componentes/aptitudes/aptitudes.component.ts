@@ -28,22 +28,22 @@ export class AptitudesComponent implements OnInit {
       });
    }
 
-   // Utilizano un único servicio de portfolio
-   // ngOnInit(): void {
-   //    this.esAdmin = true;
-   //    this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //       this.aptitudList = data.aptitudes;
-   //    });
-   // }
+   /* Utilizano un único servicio de portfolio
+   ngOnInit(): void {
+      this.esAdmin = true;
+      this.datosPortfolio.obtenerDatos().subscribe(data => {
+         this.aptitudList = data.aptitudes;
+      });
+   }
 
-   // borrar(id?: number) {
-   //    const rutaURL = "aptitud/borrar/" + id;
-   //    if (id != undefined) {
-   //       this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
-   //          this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //             this.aptitudList = data.aptitudes;
-   //          });
-   //       });
-   //    }
-   // }
+   borrar(id?: number) {
+      const rutaURL = "aptitud/borrar/" + id;
+      if (id != undefined) {
+         this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
+            this.datosPortfolio.obtenerDatos().subscribe(data => {
+               this.aptitudList = data.aptitudes;
+            });
+         });
+      }
+   } */
 }

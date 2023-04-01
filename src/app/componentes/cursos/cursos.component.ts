@@ -28,21 +28,21 @@ export class CursosComponent implements OnInit {
       });
    }
 
-   // ngOnInit(): void {
-   //    this.esAdmin = true;
-   //    this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //       this.cursoList = data.cursos;
-   //    });
-   // }
+   /* ngOnInit(): void {
+      this.esAdmin = true;
+      this.datosPortfolio.obtenerDatos().subscribe(data => {
+         this.cursoList = data.cursos;
+      });
+   }
 
-   // borrar(id?: number) {
-   //    const rutaURL = "curso/borrar/" + id;
-   //    if (id != undefined) {
-   //       this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
-   //          this.datosPortfolio.obtenerDatos().subscribe(data => {
-   //             this.cursoList = data.cursos;
-   //          });
-   //       });
-   //    }
-   // }
+   borrar(id?: number) {
+      const rutaURL = "curso/borrar/" + id;
+      if (id != undefined) {
+         this.datosPortfolio.borrarDatos(rutaURL).subscribe(data => {
+            this.datosPortfolio.obtenerDatos().subscribe(data => {
+               this.cursoList = data.cursos;
+            });
+         });
+      }
+   } */
 }

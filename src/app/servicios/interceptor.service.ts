@@ -21,7 +21,7 @@ export class InterceptorService implements HttpInterceptor {
             }
          })
       }
-      console.log("-----> Interceptor está corriendo, currentUser: " + JSON.stringify(currentUser.token));
+      // console.log("-----> Interceptor está corriendo, currentUser: " + JSON.stringify(currentUser.token));
       return next.handle(req);
    }
 }
