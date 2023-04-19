@@ -8,7 +8,7 @@ import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
    styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-   // portfolioAbierto: boolean = false;
+   portfolioAbierto: boolean = false;
    constructor(private authServ: AutenticacionService, private ruta: Router) { }
 
    ngOnInit(): void {

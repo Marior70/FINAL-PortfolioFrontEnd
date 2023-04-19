@@ -8,7 +8,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class AptitudService {
    // rutaURL: string = "./assets/datos/"
-   baseURL: string = "http://localhost:8080/api/aptitud";
+   baseURL: string = "https://portfolio-mrl-api.onrender.com/api/aptitud";
 
    constructor(private http: HttpClient) { }
 

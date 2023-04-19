@@ -8,7 +8,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class EducacionService {
 // rutaURL: string = "./assets/datos/"
-baseURL: string = "http://localhost:8080/api/educacion";
+baseURL: string = "https://portfolio-mrl-api.onrender.com/api/educacion";
 
 constructor(private http: HttpClient) { }
 

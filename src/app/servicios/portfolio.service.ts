@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
    // rutaURL: string = "./assets/datos/"  
-   baseURL: string = "http://localhost:8080/api/";
+   baseURL: string = "https://portfolio-mrl-api.onrender.com/api/";
 
    constructor(private http: HttpClient) { }
 

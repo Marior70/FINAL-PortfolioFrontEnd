@@ -12,7 +12,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class PersonaService {
    // rutaURL: string = "./assets/datos/"
-   baseURL: string = "http://localhost:8080/api/persona";
+   baseURL: string = "https://portfolio-mrl-api.onrender.com/api/persona";
 
    constructor(private http: HttpClient) { }
 
@@ -24,11 +24,11 @@ export class PersonaService {
       return this.http.put<any>(this.baseURL + "/editar/" + `${id}`, form.value);
    }
 
-   /* agregarDatos(form: FormGroup): Observable<any> {
+   agregarDatos(form: FormGroup): Observable<any> {
       return this.http.post<any>(this.baseURL + "/nueva", form.value);
    }
 
    borrarDatos(id: number): Observable<any> {
       return this.http.delete<any>(this.baseURL + "/borrar/" + `${id}`);
-   } */
+   }
 }

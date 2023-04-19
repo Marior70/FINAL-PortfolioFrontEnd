@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
    providedIn: 'root'
 })
 export class AutenticacionService {
-   url = "http://localhost:8080/auth/abrirportfolio";
+   url = "https://portfolio-mrl-api.onrender.com/auth/abrirportfolio";
    currentUserSubject: BehaviorSubject<any>;
    // portfolioAbierto: boolean = true;
 
@@ -46,7 +46,7 @@ export class AutenticacionService {
 
 /* // Versión si recibo la data en el header "Authorization" (A CORREGIR / TERMINAR DE DESARROLLAR)
 
-url = "http://localhost:8080/auth/abrirportfolio";
+url = "https://portfolio-mrl-api.onrender.com/auth/abrirportfolio";
       tokenActualSubject: BehaviorSubject<any>;
       // rolActualSubject: BehaviorSubject<any>
    
